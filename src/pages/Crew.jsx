@@ -20,7 +20,7 @@ const Crew = () => {
     });
   };
   useEffect(() => {
-    // adds the active class as page loads
+ 
     let linkItem = document.querySelector("#crew");
     linkItem.classList.add("active");
 
@@ -28,7 +28,7 @@ const Crew = () => {
     dot.classList.add("active");
 
     return () => {
-      // remove the active class as the page unmounts
+
       linkItem.classList.remove("active");
       dot.classList.remove("active");
     };

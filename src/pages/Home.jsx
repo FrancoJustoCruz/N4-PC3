@@ -2,13 +2,12 @@ import React, { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    // adds the active class as page loads
     let linkItem = document.querySelector("#home");
     linkItem.classList.add("active");
     console.log(linkItem);
 
     return () => {
-      // remove the active class as the page unmounts
+
       linkItem.classList.remove("active");
     };
   }, []);

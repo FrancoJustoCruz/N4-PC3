@@ -26,7 +26,6 @@ const Destination = () => {
     navItem.classList.add("active");
 
     return () => {
-      // remove the active class as the page unmounts
       linkItem.classList.remove("active");
       navItem.classList.remove("active");
     };
@@ -42,7 +41,6 @@ const Destination = () => {
     });
   };
 
-  // console.log(destinationData);
   return (
     <section className="background destination-page-container">
       <div className="destination-page-wrapper">
@@ -57,7 +55,6 @@ const Destination = () => {
         </div>
 
         <div className="destination-page-content-right">
-          {/* <DestinationContent planetData={planetData[0]} /> */}
           <div className="destination-page-content-right-nav">
             {planets.destinations.map((item) => {
               return (
